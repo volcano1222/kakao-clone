@@ -1,0 +1,29 @@
+.nav-play {
+  margin: 15px 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-play__info span {
+  display: block;
+}
+
+.nav-play__info-singer {
+  color: rgba(100, 100, 100, 0.9);
+  margin: 3px 0px;
+  font-size: 14px;
+}
+
+.nav-play__info-title {
+  color: white;
+  font-size: 16px;
+}
+
+.nav-play__bar i {
+  color: white;
+  margin-right: 13px;
+}

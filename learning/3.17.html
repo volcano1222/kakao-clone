@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        button:active {
+            background-color: tomato;
+        }
+
+        input:focus {
+            background-color: tan;
+        }
+
+        a:visited {
+            color: tomato;
+        }
+
+        a:hover {
+            color: teal;
+        }
+
+        a:focus {
+            color: wheat;
+        }
+        
+        form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        form:focus-within {
+            border-color: darkolivegreen;
+        }
+
+        form:hover input:focus {
+            background-color: sienna;
+        }
+    </style>
+  </head>
+  <body>
+      <div>
+          <button>Hello</button>
+          <input type="text">
+          <input type="text">    
+      </div>
+      <a href="https://apple.com">Go to apple</a>
+
+      <form>
+          <input type="text" name="" id="">
+          <input type="text" name="" id="">
+          <input type="text" name="" id="">
+      </form>
+  </body>
+</html>

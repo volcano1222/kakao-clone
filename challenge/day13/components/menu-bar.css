@@ -1,0 +1,6 @@
+.menu-bar {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.7);
+}

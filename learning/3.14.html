@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home</title>
+        <link href="styles.css" rel="stylesheet">
+        <style>
+            body {
+                height: 1000vh;
+                margin: 50px;
+            }  
+            div {               
+                width: 150px;
+                height: 150px;            
+                background-color: wheat;
+                
+            }
+
+            div:first-child {
+                background-color: tomato;
+            }
+
+            div:last-child {
+                background-color: teal;
+            }
+            
+            span {
+                background-color: tomato;
+            }
+
+            /* odd, even, 2n, 2n + 1, 3n + 1... n값을 받을 수도 있다. */
+            span:nth-child(even) {
+                background-color: teal;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- <div></div>    
+        <div></div>    
+        <div></div>                       -->
+
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>         
+    </body>
+</html>

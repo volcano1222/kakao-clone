@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+.fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.none {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.wrap {
+  padding: 6vmin;
+}
+
+.flex {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+img {
+  min-width: 120px;
+  min-height: 180px;
+  width: 36vmin;
+  height: 46vmin;
+  background-color: #e0e0e0;
+}
+/* .org img {
+  min-width: 180px;
+  min-height: 180px;
+  width: 46vmin;
+  height: 46vmin;
+} */
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 20px 6vmin;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.org {
+  margin-bottom: 20px;
+}
+
+.ex {
+  margin: 20px 40px 20px 0;
+}
+
+@media (max-width: 400px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  h1 {
+    font-size: 32px;
+    padding: 14px 6vmin;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+}
+</style>
+
+</head>
+<body>
+    <h1>object-fit</h1>
+<div class="wrap">
+  <div class="org">
+    <h2>Original</h2><img src="http://unsplash.it/600/600?image=180"/>
+  </div>
+  <div class="flex">
+    <div class="ex">
+      <h2>object-fit: fill</h2>
+      <img class="fill" src="http://unsplash.it/600/600?image=180"/>
+    </div>
+    <div class="ex">
+      <h2>object-fit: contain</h2><img class="contain" src="http://unsplash.it/800/600?image=180"/>
+    </div>
+    <div class="ex">
+      <h2>object-fit: cover</h2><img class="cover" src="http://unsplash.it/800/600?image=180"/>
+    </div>
+    <div class="ex">
+      <h2>object-fit: none</h2><img class="none" src="http://unsplash.it/800/600?image=180"/>
+    </div>
+    <div class="ex">
+      <h2>object-fit: scale-down</h2><img class="scale-down" src="http://unsplash.it/800/600?image=180"/>
+    </div>
+  </div>
+</div>
+</body>
+</html>
